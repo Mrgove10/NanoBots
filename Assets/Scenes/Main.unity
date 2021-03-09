@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &314799618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -349,7 +349,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  m_SmoothMovement: 0
+  m_SmoothMovement: 1
   m_FollowTightness: 10
   m_SnapThresholdDistance: 10
   m_Reticle: {fileID: 0}
@@ -533,7 +533,7 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
-  m_LineType: 0
+  m_LineType: 1
   m_MaxRaycastDistance: 30
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 16
@@ -573,13 +573,13 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 5786378758826817420, guid: cd554688a05834342a81d01b0df2149d, type: 3}
-  m_ModelTransform: {fileID: 5786378758826817420, guid: cd554688a05834342a81d01b0df2149d, type: 3}
+  m_ModelPrefab: {fileID: 0}
+  m_ModelTransform: {fileID: 0}
   m_AnimateModel: 0
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
   m_ControllerNode: 5
-  m_SelectUsage: 3
+  m_SelectUsage: 2
   m_ActivateUsage: 2
   m_UIPressUsage: 2
   m_AxisToPressThreshold: 0.1
@@ -609,7 +609,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &578679027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -881,7 +881,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &634995641
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1015,7 +1015,7 @@ MonoBehaviour:
       value: 1
       inSlope: 0
       outSlope: 0
-      tangentMode: 0
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0
@@ -1024,7 +1024,7 @@ MonoBehaviour:
       value: 1
       inSlope: 0
       outSlope: 0
-      tangentMode: 0
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0
@@ -1089,7 +1089,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  m_SmoothMovement: 0
+  m_SmoothMovement: 1
   m_FollowTightness: 10
   m_SnapThresholdDistance: 10
   m_Reticle: {fileID: 0}
@@ -1146,7 +1146,7 @@ LineRenderer:
         value: 1
         inSlope: 0
         outSlope: 0
-        tangentMode: 0
+        tangentMode: 34
         weightedMode: 0
         inWeight: 0
         outWeight: 0
@@ -1155,7 +1155,7 @@ LineRenderer:
         value: 1
         inSlope: 0
         outSlope: 0
-        tangentMode: 0
+        tangentMode: 34
         weightedMode: 0
         inWeight: 0
         outWeight: 0
@@ -1273,7 +1273,7 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
-  m_LineType: 0
+  m_LineType: 1
   m_MaxRaycastDistance: 30
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 16
@@ -1313,13 +1313,13 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 5786378758826817420, guid: cd554688a05834342a81d01b0df2149d, type: 3}
+  m_ModelPrefab: {fileID: 0}
   m_ModelTransform: {fileID: 0}
   m_AnimateModel: 0
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
   m_ControllerNode: 4
-  m_SelectUsage: 3
+  m_SelectUsage: 2
   m_ActivateUsage: 2
   m_UIPressUsage: 2
   m_AxisToPressThreshold: 0.1
@@ -1533,6 +1533,9 @@ GameObject:
   m_Component:
   - component: {fileID: 746273667}
   - component: {fileID: 746273666}
+  - component: {fileID: 746273669}
+  - component: {fileID: 746273670}
+  - component: {fileID: 746273668}
   m_Layer: 0
   m_Name: XR Rig
   m_TagString: Untagged
@@ -1573,6 +1576,97 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &746273668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746273665}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 746273669}
+  m_MoveSpeed: 1
+  m_EnableStrafe: 1
+  m_UseGravity: 1
+  m_GravityApplicationMode: 0
+  m_ForwardSource: {fileID: 0}
+  m_LeftHandMoveAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Left Hand Move
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 88d55c7b-3fa2-478b-9787-6c5aaa44fd48
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+    m_Reference: {fileID: 0}
+  m_RightHandMoveAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Right Hand Move
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: d3014071-4a8c-476c-8d6b-43ef999aea7b
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 1D Axis
+        m_Id: b5ee1688-7d66-434a-93af-4960aa2892a5
+        m_Path: 1DAxis
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Right Hand Move
+        m_Flags: 4
+      - m_Name: negative
+        m_Id: 04aa0f9b-be7e-4760-a718-3044234485de
+        m_Path: <ViveController>/trackpad/x
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Right Hand Move
+        m_Flags: 8
+      - m_Name: positive
+        m_Id: db2645ca-9329-49ec-ad6b-95be42eb510a
+        m_Path: <ViveController>/trackpad/y
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Right Hand Move
+        m_Flags: 8
+    m_Reference: {fileID: 0}
+--- !u!114 &746273669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746273665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Timeout: 10
+  m_XRRig: {fileID: 746273666}
+--- !u!114 &746273670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746273665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 746273669}
 --- !u!1 &1178592791
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,6 +1839,7 @@ GameObject:
   - component: {fileID: 1987160810}
   - component: {fileID: 1987160809}
   - component: {fileID: 1987160808}
+  - component: {fileID: 1987160812}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -1829,3 +1924,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1987160812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987160807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f6bf3d943ac7945842268c9ef1dca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 593188487}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CustomReticle: {fileID: 4165317672627952823, guid: cd554688a05834342a81d01b0df2149d, type: 3}
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_TeleportationProvider: {fileID: 0}
+  m_MatchOrientation: 0
+  m_TeleportTrigger: 0

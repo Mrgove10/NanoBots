@@ -321,7 +321,7 @@ PlayerSettings:
     m_Automatic: 1
   m_BuildTargetVRSettings:
   - m_BuildTarget: Standalone
-    m_Enabled: 0
+    m_Enabled: 1
     m_Devices:
     - Oculus
     - OpenVR
@@ -572,7 +572,8 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    1: VRInteraction
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
