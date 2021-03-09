@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4973687973034452851
 Transform:
   m_ObjectHideFlags: 0
@@ -45,8 +45,8 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 5
   m_Range: 5
-  m_SpotAngle: 86.27837
-  m_InnerSpotAngle: 21.80208
+  m_SpotAngle: 90
+  m_InnerSpotAngle: 9
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -82,13 +82,13 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 63.844723, y: 63.844723, z: 63.844723, w: 1.8669337e-16}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -102,7 +102,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5067129496528811823, guid: f048ecd1c9e056542b4c3d5762043fe6, type: 3}
       propertyPath: m_Name
-      value: Lantern
+      value: Lantern (12)
       objectReference: {fileID: 0}
     - target: {fileID: 8073079150079247676, guid: f048ecd1c9e056542b4c3d5762043fe6, type: 3}
       propertyPath: m_RootOrder
@@ -110,31 +110,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8073079150079247676, guid: f048ecd1c9e056542b4c3d5762043fe6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.407265
+      value: 12.42
       objectReference: {fileID: 0}
     - target: {fileID: 8073079150079247676, guid: f048ecd1c9e056542b4c3d5762043fe6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0000009485961
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8073079150079247676, guid: f048ecd1c9e056542b4c3d5762043fe6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.3603263
+      value: 9.04
       objectReference: {fileID: 0}
     - target: {fileID: 8073079150079247676, guid: f048ecd1c9e056542b4c3d5762043fe6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8073079150079247676, guid: f048ecd1c9e056542b4c3d5762043fe6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8073079150079247676, guid: f048ecd1c9e056542b4c3d5762043fe6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.70710677
       objectReference: {fileID: 0}
     - target: {fileID: 8073079150079247676, guid: f048ecd1c9e056542b4c3d5762043fe6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8073079150079247676, guid: f048ecd1c9e056542b4c3d5762043fe6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -142,7 +142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8073079150079247676, guid: f048ecd1c9e056542b4c3d5762043fe6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 8073079150079247676, guid: f048ecd1c9e056542b4c3d5762043fe6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
