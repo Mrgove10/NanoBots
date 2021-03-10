@@ -8,8 +8,8 @@ using UnityEditor;
 
 [CustomEditor(typeof(ModelCustomizer))]
 [CanEditMultipleObjects]
-public class ModelCustomizerInspector : Editor {
-
+public class ModelCustomizerInspector : Editor
+{
     private ModelCustomizer customizer;
     private bool[] bools;
     private string[] names;
@@ -20,14 +20,16 @@ public class ModelCustomizerInspector : Editor {
     {
         if (targets.Length > 1)
         {
-            material = (Material)EditorGUILayout.ObjectField("Material", material, typeof(Material), false);
+            material = (Material) EditorGUILayout.ObjectField("Material", material, typeof(Material), false);
 
             if (GUILayout.Button("Apply material to all children") && material != null)
             {
-                Undo.RecordObjects(targets.SelectMany(t => ((ModelCustomizer)t).gameObject.GetComponentsInChildren<MeshRenderer>()).ToArray(), "Apply Model Customizer materials");
+                Undo.RecordObjects(
+                    targets.SelectMany(t => ((ModelCustomizer) t).gameObject.GetComponentsInChildren<MeshRenderer>())
+                        .ToArray(), "Apply Model Customizer materials");
                 foreach (UnityEngine.Object obj in targets)
                 {
-                    ModelCustomizer modelCustomizer = (ModelCustomizer)obj;
+                    ModelCustomizer modelCustomizer = (ModelCustomizer) obj;
                     modelCustomizer.ApplyMaterial(material);
                 }
             }
@@ -40,7 +42,7 @@ public class ModelCustomizerInspector : Editor {
         {
             customizer = target as ModelCustomizer;
 
-            material = (Material)EditorGUILayout.ObjectField("Material", material, typeof(Material), false);
+            material = (Material) EditorGUILayout.ObjectField("Material", material, typeof(Material), false);
 
             if (GUILayout.Button("Apply material to all children") && material != null)
             {
@@ -54,6 +56,7 @@ public class ModelCustomizerInspector : Editor {
                 customizer.DoReset();
                 start = false;
             }
+
             bools = customizer.GetBools();
             names = customizer.GetNames();
             for (int i = 0; i < names.Length; i++)

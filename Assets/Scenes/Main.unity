@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &314799618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -174,7 +174,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ccbdf51da8e30d54fa2f04fbbb5e591c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -609,7 +609,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &578679027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,7 +624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Emmiters: []
   AudioSource: {fileID: 1604222745}
-  Player: {fileID: 0}
+  Player: {fileID: 746273665}
   delay: 10
 --- !u!65 &578679028
 BoxCollider:
@@ -710,7 +710,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578679026}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
@@ -881,7 +881,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &634995641
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -914,7 +914,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ccbdf51da8e30d54fa2f04fbbb5e591c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1535,7 +1535,6 @@ GameObject:
   - component: {fileID: 746273666}
   - component: {fileID: 746273669}
   - component: {fileID: 746273670}
-  - component: {fileID: 746273668}
   m_Layer: 0
   m_Name: XR Rig
   m_TagString: Untagged
@@ -1576,70 +1575,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &746273668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746273665}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_System: {fileID: 746273669}
-  m_MoveSpeed: 1
-  m_EnableStrafe: 1
-  m_UseGravity: 1
-  m_GravityApplicationMode: 0
-  m_ForwardSource: {fileID: 0}
-  m_LeftHandMoveAction:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Left Hand Move
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 88d55c7b-3fa2-478b-9787-6c5aaa44fd48
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-    m_Reference: {fileID: 0}
-  m_RightHandMoveAction:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Right Hand Move
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: d3014071-4a8c-476c-8d6b-43ef999aea7b
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 1D Axis
-        m_Id: b5ee1688-7d66-434a-93af-4960aa2892a5
-        m_Path: 1DAxis
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Right Hand Move
-        m_Flags: 4
-      - m_Name: negative
-        m_Id: 04aa0f9b-be7e-4760-a718-3044234485de
-        m_Path: <ViveController>/trackpad/x
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Right Hand Move
-        m_Flags: 8
-      - m_Name: positive
-        m_Id: db2645ca-9329-49ec-ad6b-95be42eb510a
-        m_Path: <ViveController>/trackpad/y
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Right Hand Move
-        m_Flags: 8
-    m_Reference: {fileID: 0}
 --- !u!114 &746273669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1745,7 +1680,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

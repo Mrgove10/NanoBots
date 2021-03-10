@@ -9,7 +9,6 @@ namespace BrokenVector.LowPolyFencePack
     [RequireComponent(typeof(Animation))]
     public class DoorController : MonoBehaviour
     {
-
         /// <summary>
         /// door state: Open or Closed
         /// </summary>
@@ -23,33 +22,37 @@ namespace BrokenVector.LowPolyFencePack
         /// <returns>
         /// returns and sets the current door state
         /// </returns>
-        public DoorState CurrentState {
-            get
-            {
-                return currentState;
-            }
+        public DoorState CurrentState
+        {
+            get { return currentState; }
             set
             {
                 currentState = value;
                 Animate();
             }
         }
+
         /// <returns>
         /// returns wether the door is currently open or closed
         /// </returns>
-        public bool IsDoorOpen { get { return CurrentState == DoorState.Open; } }
+        public bool IsDoorOpen
+        {
+            get { return CurrentState == DoorState.Open; }
+        }
+
         /// <returns>
         /// returns wether the door is currently open or closed
         /// </returns>
-        public bool IsDoorClosed { get { return CurrentState == DoorState.Closed; } }
+        public bool IsDoorClosed
+        {
+            get { return CurrentState == DoorState.Closed; }
+        }
 
         public DoorState InitialState = DoorState.Closed;
         public float AnimationSpeed = 1;
 
-        [SerializeField]
-        private AnimationClip openAnimation;
-        [SerializeField]
-        private AnimationClip closeAnimation;
+        [SerializeField] private AnimationClip openAnimation;
+        [SerializeField] private AnimationClip closeAnimation;
 
         private Animation animator;
         private DoorState currentState;
@@ -62,7 +65,7 @@ namespace BrokenVector.LowPolyFencePack
                 Debug.LogError("Every DoorController needs an Animator.");
                 return;
             }
-            
+
             // animator settings
             animator.playAutomatically = false;
 
@@ -74,7 +77,7 @@ namespace BrokenVector.LowPolyFencePack
         }
 
         void Start()
-        {            
+        {
             // a little hack, to set the initial state
             currentState = InitialState;
             var clip = GetCurrentAnimation();

@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ModelCustomizer : MonoBehaviour {
+public class ModelCustomizer : MonoBehaviour
+{
 #if UNITY_EDITOR
 
     private GameObject[] parts;
-    [SerializeField]
-    private bool[] bools;
-    [SerializeField]
+    [SerializeField] private bool[] bools;
 
+    [SerializeField]
     void Reset()
     {
         //create arrays
@@ -22,6 +22,7 @@ public class ModelCustomizer : MonoBehaviour {
             parts[i] = transform.GetChild(i).gameObject;
             bools[i] = parts[i].activeSelf;
         }
+
         //refresh visible
         RefreshVisibility();
     }
@@ -43,6 +44,7 @@ public class ModelCustomizer : MonoBehaviour {
         {
             strings[i] = parts[i].name;
         }
+
         return strings;
     }
 
@@ -51,7 +53,8 @@ public class ModelCustomizer : MonoBehaviour {
         return bools;
     }
 
-    public void SetBool(int i, bool b){
+    public void SetBool(int i, bool b)
+    {
         bools[i] = b;
         RefreshVisibility();
     }

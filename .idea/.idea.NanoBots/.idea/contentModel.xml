@@ -36,6 +36,27 @@
               <e p="README.txt" t="Include" />
             </e>
           </e>
+          <e p="Nicrom" t="Include">
+            <e p="PolyPacks" t="Include">
+              <e p="Wind" t="Include">
+                <e p="Assets" t="Include">
+                  <e p="Scripts" t="Include">
+                    <e p="Editor" t="Include">
+                      <e p="LPVegetation_MaterialInspector.cs" t="Include" />
+                    </e>
+                  </e>
+                  <e p="Shaders" t="Include">
+                    <e p="ASE" t="Include">
+                      <e p="LPW_Vegetation.shader" t="Include" />
+                    </e>
+                  </e>
+                </e>
+                <e p="Documentation" t="Include">
+                  <e p="LPW_Log.txt" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
         </e>
         <e p="Scripts" t="Include">
           <e p="CounterTick.cs" t="Include" />

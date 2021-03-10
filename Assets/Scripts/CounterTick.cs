@@ -6,18 +6,14 @@ using UnityEngine;
 
 public class CounterTick : MonoBehaviour
 {
-    [ReadOnly]
-    [SerializeField] 
-    private GameObject[] Emmiters;
+    [ReadOnly] [SerializeField] private GameObject[] Emmiters;
 
-    [SerializeField]
-    private AudioSource AudioSource;
-    
-    [SerializeField]
-    private GameObject Player;
+    [SerializeField] private AudioSource AudioSource;
 
-    [SerializeField]
-    private float delay = 10;
+    [SerializeField] private GameObject Player;
+
+    [SerializeField] private float delay = 10;
+
     private void Awake()
     {
         Emmiters = GameObject.FindGameObjectsWithTag("SoundEmmiter");
@@ -27,22 +23,60 @@ public class CounterTick : MonoBehaviour
     void Start()
     {
         Debug.Log(Emmiters);
+        StartCoroutine(Example());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator Example()
     {
-        float closest = 999999f;
-        foreach (var emmiter in Emmiters)
+        while (true)
         {
-            var distance = Vector3.Distance(Player.transform.position, emmiter.transform.position);
-            if (closest > distance)
+            float closest = 999999f;
+            foreach (var emmiter in Emmiters)
             {
-                closest = distance;
+                var distance = Vector3.Distance(Player.transform.position, emmiter.transform.position);
+                if (closest > distance)
+                {
+                    closest = distance;
+                }
+
+                Debug.Log("c" + closest);
             }
 
-            Debug.Log("c"+closest);
-            Debug.Log("d"+distance);
+            Debug.Log("tick");
+            AudioSource.Play();
+            Debug.Log(GetDelay(closest));
+            yield return new WaitForSecondsRealtime(GetDelay(closest));
         }
+    }
+
+    /// <summary>
+    /// Get the delay depending on the distance
+    /// </summary>
+    /// <param name="distance"></param>
+    /// <returns></returns>
+    float GetDelay(float distance)
+    {
+        if (distance < 2)
+        {
+            return 0.01f;
+        }
+        else if (distance < 5)
+        {
+            return 0.25f;
+        }
+        else if (distance > 10)
+        {
+            return 0.5f;
+        }
+        else if (distance < 15)
+        {
+            return 1;
+        }
+        else if (distance < 25)
+        {
+            return 10;
+        }
+
+        return 0;
     }
 }

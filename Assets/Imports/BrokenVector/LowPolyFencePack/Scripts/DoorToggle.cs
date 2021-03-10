@@ -8,9 +8,8 @@ namespace BrokenVector.LowPolyFencePack
     /// and some kind of Collider which detects your mouse click applied.
     /// </summary>
     [RequireComponent(typeof(DoorController))]
-	public class DoorToggle : MonoBehaviour
+    public class DoorToggle : MonoBehaviour
     {
-
         private DoorController doorController;
 
         void Awake()
@@ -18,10 +17,9 @@ namespace BrokenVector.LowPolyFencePack
             doorController = GetComponent<DoorController>();
         }
 
-	    void OnMouseDown()
-	    {
-	        doorController.ToggleDoor();
-	    }
-
-	}
+        void OnMouseDown()
+        {
+            doorController.ToggleDoor();
+        }
+    }
 }
