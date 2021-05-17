@@ -98,7 +98,9 @@
         <e p="Scripts" t="Include">
           <e p="AI.cs" t="Include" />
           <e p="CounterTick.cs" t="Include" />
+          <e p="Gun.cs" t="Include" />
           <e p="PoloiceCarLights.cs" t="Include" />
+          <e p="ShootableBox.cs" t="Include" />
           <e p="Spawner.cs" t="Include" />
         </e>
         <e p="Sounds" t="Include">
